@@ -31,9 +31,9 @@ private CustomList list;
     public void addCityTest()
     {
         list = MockCityList();
-        int count = list.getCount();
-        // test
-        list.addCity(new City("Edmonton","Alberta"));
+        int listSize = list.getCount();
+        list.addCity(new City("Estevan", "SK"));
+        assertEquals(list.getCount(),listSize + 1);
 
     }
 
