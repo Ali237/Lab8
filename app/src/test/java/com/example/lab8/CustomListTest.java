@@ -12,5 +12,28 @@ import java.util.ArrayList;
 
 public class CustomListTest {
 
+private CustomList list;
+    /**
+     * create a mocklist for my citylist
+     * @return
+     */
+
+    public CustomList MockCityList(){
+        list = new CustomList(null, new ArrayList<>());
+        return list;
+    }
+
+    /**
+     * create a test for add city method
+     */
+
+    @Test
+    public void addCityTest()
+    {
+        list = MockCityList();
+        int count = list.getCount();
+        list.addCity(new City("Edmonton","Alberta"));
+
+    }
 
 }
