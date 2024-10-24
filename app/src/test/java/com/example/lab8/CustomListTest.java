@@ -36,5 +36,19 @@ private CustomList list;
         assertEquals(list.getCount(),listSize + 1);
 
     }
+//
+//    @Test
+//    public void deleteCityTest()
+//    {
+//        list = MockCityList();
+//        int listSize = list.getCount();
+//        City city = new City("Edmonoton","AB");
+//        list.addCity(city);
+//        list.deleteCity(city);
+//        assertEquals(list.getCount(),listSize - 1);
+//
+//    }
+//
+//    @Test
 
 }
