@@ -32,6 +32,7 @@ private CustomList list;
     {
         list = MockCityList();
         int count = list.getCount();
+        // test
         list.addCity(new City("Edmonton","Alberta"));
 
     }
