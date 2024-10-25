@@ -50,7 +50,22 @@ public class CustomList extends ArrayAdapter<City> {
     }
 
     public void addCity(City city){
+        cities.add(city);
 
     }
+
+    public void deleteCity(City city){
+        cities.remove(city);
+    }
+
+    /**
+     *  returns if list of city has city
+     */
+    public boolean hasCity(City city)
+    {
+        return cities.contains(city);
+    }
+
+
 
 }
